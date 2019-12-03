@@ -1,0 +1,63 @@
+body {
+    background: lightgray;
+
+    .main-block {
+        width: 30rem;
+        margin: 0 auto;
+        margin-top: 12rem;
+
+        .amount-block {
+            span {
+                font-size: 20px;
+                font-weight: bold;
+                color: red;
+                &:first-of-type {
+                    color: black;
+                    font-weight: bold;
+                }
+                &:last-of-type {
+                    color: darkgray;
+                }
+            }
+        }
+        .range-block {
+            margin-bottom: 2rem;
+            .title-block {
+                position: relative;
+                height: 2rem;
+    
+                span {
+                    position: absolute;
+                    font-weight: 500;
+                    &:first-of-type {
+                        left: 0;
+                        color: black;
+                    }
+                    &:last-of-type {
+                        right: 0;
+                        color: red;
+                    }
+                }
+            }
+            .input-block {
+                input {
+                    width: 100%;
+                    height: 0.5rem;
+                    outline: none; 
+                    transition: background 450ms ease-in;
+                    
+                    -webkit-appearance: none;
+                }
+                ::-webkit-slider-thumb {
+                    background-color: black;
+                    border-radius: 0;
+                        
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 50%;
+                    -webkit-appearance: none;
+                  }
+            }
+        }
+    }
+}
